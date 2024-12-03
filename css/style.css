@@ -1,0 +1,92 @@
+:root {
+    --main-color: #30197d;
+    --alt-color: rgb(41, 21, 107);
+}
+body {
+    background-color: #08001f;
+}
+.container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 70px auto;
+}
+.container .form {
+    background-color: rgba(235, 0, 255, 0.10);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.container .form .name {
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+    opacity: 0.8;
+}
+.container .form .name:focus{
+    outline: none;
+    caret-color: var(--main-color);
+}
+.container .form .submit {
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.container .form .submit:hover {
+    background-color: var(--alt-color);
+}
+.container .tasks {
+    background-color: rgba(235, 0, 255, 0.10);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container button {
+    background-color: var(--main-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+}
+.container button:hover {
+    background-color: var(--alt-color);
+}
+.container .new-task {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+.container .task-content {
+    padding: 10px 100px 10px 10px;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 17px;
+}
+@media (max-width: 767px) {
+    .container .task-content {
+        padding: 10px 30px 10px 10px;
+    }
+}
+.dele {
+    padding: 10px 150px 10px 10px;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: line-through;
+    opacity: 0.8;
+    color: #777;
+}
